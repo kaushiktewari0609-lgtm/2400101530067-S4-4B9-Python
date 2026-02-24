@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <h1>inside the app component</h1>
+    <h1>kaushik</h1>
     )
 }
 
