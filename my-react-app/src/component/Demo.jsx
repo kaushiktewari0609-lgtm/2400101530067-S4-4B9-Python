@@ -1,6 +1,8 @@
-export function Demo()
+function Demo()
 {
     return(
         <h1>This is example of demo</h1>
     )
 }
+
+
