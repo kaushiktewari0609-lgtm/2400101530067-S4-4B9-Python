@@ -5,18 +5,44 @@ import './App.css'
 
 function App() 
 {
-  let data="demo"
-  function update()
+  const [data,setData]=useState("OFF");
+  
+  function toggle()
   {
-    data="Example"
-    alert(data);
+    if(data=="ON"){
+    setData("OFF");}
+    else{
+      setData("ON")
+    }
+
   }
+  
+
   return(
     <>
+    <h1>state of variable</h1>
+    <h1>{data}</h1>
+    
+    <button onClick={toggle}>toggle</button>
+    
+    </>
+  );
+  
+  
+ /*  let data="5000";
+    function update()
+    {
+      data="10000";
+      alert(data);
+    }
+    
+  return(
+    <>
+    <h1>state of variable</h1>
     <h1>{data}</h1>
     <button onClick={update}>testing</button>
     </>
-  )
+  );*/
 /*function abc()
 {
   alert("function called")
