@@ -2,28 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Toggle from './assignment/Toggle'
+import Character_counter from './assignment/Character_counter'
 
 function App() 
 {
-  const [data,setData]=useState("OFF");
-  
-  function toggle()
-  {
-    if(data=="ON"){
-    setData("OFF");}
-    else{
-      setData("ON")
-    }
-
-  }
   
 
   return(
     <>
-    <h1>state of variable</h1>
-    <h1>{data}</h1>
-    
-    <button onClick={toggle}>toggle</button>
+    <Toggle></Toggle>
+    <Character_counter></Character_counter>
     
     </>
   );
