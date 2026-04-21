@@ -2,18 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Toggle from './assignment/Toggle'
-import Character_counter from './assignment/Character_counter'
 
-function App() 
-{
-  
+import Counter_application from './assignment/Counter_application'
+import Show_hide from './assignment/Show_hide';
+import Text_input from './assignment/Text_input';
 
-  return(
+function App() {
+  return (
     <>
-    <Toggle></Toggle>
-    <Character_counter></Character_counter>
-    
+      
+      <Counter_application />
+      <Show_hide />
+      <Text_input />
     </>
   );
   
@@ -56,4 +56,4 @@ function App()
 }
 
 
-export default App
+export default App;
